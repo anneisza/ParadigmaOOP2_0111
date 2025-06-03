@@ -10,6 +10,10 @@ class seseorang{
 };
 
 class joko : public seseorang{
+    public:
+    void pesan(){
+        cout<< "Pesan dari Joko"<<endl;
+    }
 
 };
 
@@ -29,7 +33,8 @@ int main(){
     obyek->pesan();
     obyek = &b;
     obyek->pesan();
-    a.seseorang::pesan();
-    b.seseorang::pesan();
+    //a.seseorang::pesan();
+    //b.seseorang::pesan();
+    return 0;
 
 }
