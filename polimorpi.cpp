@@ -2,7 +2,7 @@
 using namespace std;
 
 class seseorang{
-    public:
+public:
     virtual void pesan() = 0;
     //virtual void pesan(){
     // cout<< "Pesan dari seseorang"<<endl;
@@ -10,7 +10,7 @@ class seseorang{
 };
 
 class joko : public seseorang{
-    public:
+public:
     void pesan(){
         cout<< "Pesan dari Joko"<<endl;
     }
@@ -18,7 +18,7 @@ class joko : public seseorang{
 };
 
 class lia : public seseorang{
-    public:
+public:
     void pesan(){
         cout<< "Pesan dari Lia"<<endl;
     }
