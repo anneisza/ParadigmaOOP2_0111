@@ -5,10 +5,31 @@ class seseorang{
     public:
     virtual void pesan() = 0;
     //virtual void pesan(){
-    // coutr<< "Pesan dari seseorang"<<endl;
+    // cout<< "Pesan dari seseorang"<<endl;
     //}
 };
 
 class joko : public seseorang{
 
 };
+
+class lia : public seseorang{
+    public:
+    void pesan(){
+        cout<< "Pesan dari Lia"<<endl;
+    }
+};
+
+int main(){
+    seseorang*obyek;
+    joko a;
+    lia b;
+
+    obyek = &a;
+    obyek->pesan();
+    obyek = &b;
+    obyek->pesan();
+    a.seseorang::pesan();
+    b.seseorang::pesan();
+
+}
